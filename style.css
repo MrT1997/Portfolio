@@ -25,7 +25,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
-    background-color: #648ca6;
+    background-color: #C21807;
   }
   
   .sidenav {
@@ -40,7 +40,8 @@ body {
     transition: all .6s ease-in-out;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     z-index: 2; /*Needs to sit above the hamburger menu icon */
-    background-color: #394263;
+    background-color: #800000;
+    /* background-color: #394263; */
   }
   
   .sidenav.active {
@@ -96,12 +97,20 @@ body {
   .contact-info-text {
     padding-top: 61px;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
   }
-  
+
+  .mail-info:hover {
+    color: yellow;
+  }
+
+  .phone-info:hover {
+    color: yellowgreen;
+  }
+
   .main {
     grid-area: main;
-    background-color: #8fd4d9;
+    background-color: #ED2939;
   }
   
   .main-header {
@@ -111,8 +120,8 @@ body {
     padding: 20px;
     height: 300px;
     border-radius: 15px;
-    background-color: #e3e4e6;
-    color: slategray;
+    background-color: #CD5C5C;
+    color: white;
   }
 
   #main-header-heading h2 {
@@ -156,13 +165,10 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #d3d3;
-    border-radius: 15px;
   }
 
   .language-card:hover {
-    border-style: solid;
-    color: blue;
+    color: yellow;
   }
 
   .hobbies-card {
@@ -170,13 +176,10 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #3d3d;
-    border-radius: 15px;
   }
 
   .hobbies-card:hover {
-    border-style: solid;
-    color: red;
+    color: yellow;
   }
 
   .modal {
@@ -243,7 +246,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: white;
+    background-color: #CD5C5C;;
     margin-bottom: 20px;
     -webkit-column-break-inside: avoid;
     padding: 24px;
@@ -256,7 +259,7 @@ body {
 
   .card h5 {
     padding-top: 10px;
-    color: grey;
+    color: white;
   }
 
   .section-info {
@@ -275,7 +278,7 @@ body {
 
   #basicCalc:hover, #coinCount:hover, #factCalc:hover, #mortCalc:hover, #jsHangman:hover {
     cursor: pointer;
-    color: red;
+    color: white;
   }
 
   .language {
@@ -288,12 +291,12 @@ body {
   }
 
   .view:hover {
-    color: blue;
+    color: white;
   }
 
   .language-info {
     float: right;
-    color: grey;
+    color: white;
   }
 
   a {
@@ -312,7 +315,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
-    background-color: #648ca6;
+    background-color: #C21807;
   }
   
   /* Non-mobile styles, 750px breakpoint */
