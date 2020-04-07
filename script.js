@@ -9,8 +9,8 @@ var span = document.getElementsByClassName("close")[0];
 function openModal(detail) {
     if (detail.innerHTML == "Basic Calculator") {
         title.innerHTML = "Basic Calculator";
-        programLink.href = "#";
-        content.innerHTML = "This program takes two numbers and performs a basic math operation on them.";
+        programLink.href = "https://github.com/MrT1997/McDaniel-Calculator.git";
+        content.innerHTML = "This program takes two numbers and performs a basic math operation on them (addition, subtraction, multiplication, division).";
         modal.style.display = "block";
     } else if (detail.innerHTML == "Coin Count Game") {
         title.innerHTML = "Coin Count Game";
@@ -19,17 +19,17 @@ function openModal(detail) {
         modal.style.display = "block";
     } else if (detail.innerHTML == "Factorial Calculator") {
         title.innerHTML = "Factorial Calculator";
-        programLink.href = "#";
+        programLink.href = "https://github.com/MrT1997/McDaniel-Factorial-Calculator.git";
         content.innerHTML = "This program takes a number and calculates the factorial of it.";
         modal.style.display = "block";
     } else if (detail.innerHTML == "Mortgage Calculator") {
         title.innerHTML = "Mortgage Calculator";
-        programLink.href = "#";
+        programLink.href = "https://github.com/MrT1997/Mortgage-Calculator.git";
         content.innerHTML = "This program calculates the price of a mortgage depending on certain inputs (no amortization is applied here).";
         modal.style.display = "block";
     } else if (detail.innerHTML == "Hangman") {
         title.innerHTML = "Hangman";
-        programLink.href = "#";
+        programLink.href = "https://github.com/MrT1997/Hangman.git";
         content.innerHTML = "This game is a simple Hangman game (I have another version written in Python).";
         modal.style.display = "block";
     }
