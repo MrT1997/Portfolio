@@ -10,18 +10,25 @@
   </head>
   <body>
     <div class="grid-container">
-      
      <header class="header"></header>
+
+     <div id="detailModal" class="modal">
+       <div class="modal-content">
+         <a id="view-link" href="">
+           <img title="GitHub Link" src="https://res.cloudinary.com/dujofpeoh/image/upload/v1586115156/19-198840_picture-royalty-free-library-github-svg-vector-transparent_wepag0.jpg" alt="">
+          </a>
+         <span class="close" onclick="closeModal()">&times;</span>
+         <h1 id="detail-title"></h1>
+         <p id="detail-content"></p>
+       </div>
+     </div>
    
      <aside class="sidenav">
-       <div class="sidenav-close-icon">
-         <i class="fas fa-times"></i>
-       </div>
        <ul class="sidenav-list">
-         <li class="sidenav-list-item"><a href="#">About Me</a></li>
-         <li class="sidenav-list-item"><a href="#">Languages</a></li>
-         <li class="sidenav-list-item"><a href="#">Hobbies</a></li>
-         <li class="sidenav-list-item"><a href="#">Examples</a></li>
+         <li class="sidenav-list-item"><a href="#about-me-label">About Me</a></li>
+         <li class="sidenav-list-item"><a href="#language-label">Languages</a></li>
+         <li class="sidenav-list-item"><a href="#hobbies-label">Hobbies</a></li>
+         <li class="sidenav-list-item"><a href="#main-cards">Projects</a></li>
        </ul>
        <div class="divider"></div>
          <div class="contact-info">
@@ -35,72 +42,81 @@
      </aside>
    
      <main class="main">
+       <div id="about-me-label">
+         <h1>About Me</h1>
+       </div>
        <div class="main-header">
          <div id="main-header-heading">
-           <h3>My name is Tanner McDaniel, and I am a graduate of Rhodes College with a major in Computer Science and a minor in Mathematics.</h3>
-           <h4>Since graduating, I have completed an internship with IMC Companies as both a programmer and a member of their EDI team.</h4>
-           <h4>Currently, I am taking Web Programming with Tech901 at the Crosstown Concourse.</h4>
+           <h3>My name is Tanner McDaniel, and I am a graduate of <a href="https://www.rhodes.edu/">Rhodes College</a> with a major in Computer Science and a minor in Mathematics.</h3>
+           <h4>Since graduating, I have completed an internship with <a href="https://www.imccompanies.com/">IMC Companies</a> as both a programmer and a member of their EDI team.</h4>
+           <h4>Currently, I am taking Web Programming with <a href="http://tech901.org/">Tech901</a> at the Crosstown Concourse.</h4>
            <h4>One day, I hope to work for a company as either a web programmer or as a full stack developer and make full use of my college degree.</h4>
          </div>
        </div>
-       <div class="main-overview">
-        <div class="overviewcard">
+       <div id="language-label">
+        <h1>Languages</h1>
+       </div>
+       <div id="language-overview">
+        <div class="language-card">
           <h2 class="overview-text">Python</h2>
         </div>
-        <div class="overviewcard">
+        <div class="language-card">
          <h2 class="overview-text">C++</h2>
         </div>
-        <div class="overviewcard">
+        <div class="language-card">
          <h2 class="overview-text">HTML</h2>
         </div>
-        <div class="overviewcard">
+        <div class="language-card">
          <h2 class="overview-text">CSS</h2>
         </div>
-        <div class="overviewcard">
+        <div class="language-card">
           <h2 class="overview-text">CSS</h2>
         </div>
-        <div class="overviewcard">
+        <div class="language-card">
           <h2 class="overview-text">C#</h2>
         </div>
-        <div class="overviewcard">
+        <div class="language-card">
           <h2 class="overview-text">Angular</h2>
         </div>
-        <div class="overviewcard">
+        <div class="language-card">
           <h2 class="overview-text">C</h2>
         </div>
        </div>
-       <div class="hobbies-overview">
-        <div class="hobbiescard">
+       <div id="hobbies-label">
+        <h1>Hobbies</h1>
+       </div>
+       <div id="hobbies-overview">
+        <div class="hobbies-card">
           <h2 class="overview-text">Baking</h2>
         </div>
-        <div class="hobbiescard">
-          <h2 class="overview-text">Going to the Gym</h2>
+        <div class="hobbies-card">
+          <h2 class="overview-text">Walking</h2>
         </div>
-        <div class="hobbiescard">
-          <h2 class="overview-text">Unity Development</h2>
+        <div class="hobbies-card">
+          <h2 class="overview-text">Unity Design</h2>
         </div>
-        <div class="hobbiescard">
-          <h2 class="overview-text">Making Documents in LaTeX</h2>
+        <div class="hobbies-card">
+          <h2 class="overview-text">Making Files in LaTeX</h2>
         </div>
-       </div>
-       <div class="main-cards">
+      </div>
+       <div id="main-cards">
          <div class="card">
-           <h3>My Projects <span class="view"><a href="https://github.com/MrT1997?tab=repositories">View All</a></span></h3>
-           <h5>Select Projects</h5>
+           <h3>My Projects <span class="view"><a title="Go to my GitHub page" href="https://github.com/MrT1997?tab=repositories">View All</a></span></h3>
+           <h5>Select Projects <span class="language-info">Language</span></h5>
            <div class="section-info">
-             <a href="#"><h5><span class="description">Basic Calculator</span><span class="language">Python</span></h5></a>
+             <h5><span id="basicCalc" onclick="openModal(document.getElementById('basicCalc'))">Basic Calculator</span><span class="language">HTML, CSS, JavaScript</span></h5>
            </div>
            <div class="section-info">
-             <a href="#"><h5><span class="description">Coin Count Game</span><span class="language">Python</span></h5></a>
+             <h5><span id="coinCount" onclick="openModal(document.getElementById('coinCount'))">Coin Count Game</span><span class="language">Python</span></h5>
            </div>
            <div class="section-info">
-             <a href="#"><h5><span class="description">Factorial Calculator</span><span class="language">Python</span></h5></a>
+             <h5><span id="factCalc" onclick="openModal(document.getElementById('factCalc'))">Factorial Calculator</span><span class="language">Python</span></h5>
            </div>
            <div class="section-info">
-             <a href="#"><h5><span class="description">Mortgage Calculator (no amortization)</span><span class="language">HTML & JavaScript</span></h5></a>
+             <h5><span id="mortCalc" onclick="openModal(document.getElementById('mortCalc'))">Mortgage Calculator</span><span class="language">HTML, CSS, JavaScript</span></h5>
            </div>
            <div class="section-info">
-             <a href="#"><h5><span class="description">Hangman</span><span class="language">HTML & JavaScript</span></h5></a>
+             <h5><span id="jsHangman" onclick="openModal(document.getElementById('jsHangman'))">Hangman</span><span class="language">HTML, CSS, JavaScript</span></h5>
            </div>
          </div>
        </div>
@@ -112,4 +128,5 @@
      </footer>
    </div>
   </body>
+  <script src="./script.js"></script>
 </html>
